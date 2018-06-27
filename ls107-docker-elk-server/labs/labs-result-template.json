@@ -1,0 +1,35 @@
+{
+	"enviroments": [{
+		"displayname": "linux",
+		"protocol": "ssh",
+		"hostname": "#hostname",
+		"username": "#adminUsername",
+		"password": "#adminPassword",
+		"privatekey": "",
+		"port": 22,
+		"master": true,
+		"external": true,
+        "vmName":"#vmName",
+        "apps": [
+
+            {
+                "name": "elastic",
+                "port": 9200
+            },
+			{
+                "name": "kabana",
+                "port": 5601
+            }
+			
+        ]
+	}],
+     "Info": {
+		"Subscription":{
+			"Id":"#subscriptionId"
+		},
+		"ResourceGroup": {
+			"Name": "#resourceGroupName",
+			"Location": "#resourceGroupLocation"
+		}
+	}
+}

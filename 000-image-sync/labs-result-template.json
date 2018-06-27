@@ -1,0 +1,13 @@
+{
+	"EnviromentName": "#{envFolder}#",
+	"ResourceGroupName": "#{destResourceGroupName}#",
+	"SourceSnapshot": {
+		"vmName": "#{vmName}#",
+		"snapshotName": "#{SourceSnapshotName}#",
+		"OutTfsBuildUrl": "#tfsBuildUrl#",
+		"OutImageName": "#imageName#",
+		"OutImageId": "#imageId#",
+		"OutSyncDataTime": "#syncDataTime#"
+	}
+
+}

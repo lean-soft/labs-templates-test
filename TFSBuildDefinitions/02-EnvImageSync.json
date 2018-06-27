@@ -1,0 +1,442 @@
+{
+	"options": [{
+		"enabled": false,
+		"definition": {
+			"id": "5d58cc01-7c75-450c-be18-a388ddb129ec"
+		},
+		"inputs": {
+			"branchFilters": "[\"+refs/heads/*\"]",
+			"additionalFields": "{}"
+		}
+	}, {
+		"enabled": false,
+		"definition": {
+			"id": "a9db38f9-9fdc-478c-b0f9-464221e58316"
+		},
+		"inputs": {
+			"workItemType": "1076",
+			"assignToRequestor": "true",
+			"additionalFields": "{}"
+		}
+	}],
+	"variables": {
+		"destAzEnvLocation": {
+			"value": ""
+		},
+		"destAzEnvName": {
+			"value": ""
+		},
+		"destAzureAccountName": {
+			"value": ""
+		},
+		"destAzurePasswordString": {
+			"value": ""
+		},
+		"destResourceGroupName": {
+			"value": ""
+		},
+		"destSubscriptionId": {
+			"value": ""
+		},
+		"envFolder": {
+			"value": ""
+		},
+		"sourceSnapshotName": {
+			"value": ""
+		},
+		"sourceSubscriptionId": {
+			"value": ""
+		},
+		"sourceVhdUrl": {
+			"value": ""
+		},
+		"storageAccountContainer": {
+			"value": ""
+		},
+		"system.debug": {
+			"value": "true"
+		},
+		"uniqueSeed": {
+			"value": ""
+		},
+		"vmName": {
+			"value": ""
+		}
+	},
+	"retentionRules": [{
+		"branches": ["+refs/heads/*"],
+		"artifacts": [],
+		"artifactTypesToDelete": ["FilePath", "SymbolStore"],
+		"daysToKeep": 10,
+		"minimumToKeep": 1,
+		"deleteBuildRecord": true,
+		"deleteTestResults": true
+	}],
+	"properties": {},
+	"tags": [],
+	"metrics": [{
+		"name": "CurrentBuildsInQueue",
+		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInProgress",
+		"scope": "refs/heads/master",
+		"intValue": 3
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 20,
+		"date": "2018-06-11T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 30,
+		"date": "2018-06-11T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-06-11T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 1,
+		"date": "2018-06-11T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 51,
+		"date": "2018-06-11T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-06-09T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 15,
+		"date": "2018-06-09T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-06-09T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 3,
+		"date": "2018-06-09T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 18,
+		"date": "2018-06-09T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-06-08T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-06-08T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-06-08T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 2,
+		"date": "2018-06-08T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 2,
+		"date": "2018-06-08T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-06-07T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 17,
+		"date": "2018-06-07T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-06-07T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 14,
+		"date": "2018-06-07T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 31,
+		"date": "2018-06-07T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-06-06T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 3,
+		"date": "2018-06-06T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-06-06T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 3,
+		"date": "2018-06-06T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 6,
+		"date": "2018-06-06T00:00:00.000Z"
+	}],
+	"_links": {
+		"self": {
+			"href": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/94?revision=36"
+		},
+		"web": {
+			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=40da8825-511b-4256-8dca-a9936011ad23&projectId=580b5af0-a2f5-4585-8ed6-dddf6a84502d&definitionId=94"
+		},
+		"editor": {
+			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=40da8825-511b-4256-8dca-a9936011ad23&projectId=580b5af0-a2f5-4585-8ed6-dddf6a84502d&definitionId=94"
+		}
+	},
+	"jobAuthorizationScope": 1,
+	"jobTimeoutInMinutes": 60,
+	"jobCancelTimeoutInMinutes": 5,
+	"process": {
+		"phases": [{
+			"steps": [{
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "PowerShell Image Copy",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "e213ff0f-5d5c-4791-802d-52ea3e7be1f1",
+					"versionSpec": "1.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"scriptType": "filePath",
+					"scriptName": "Labs-Image-Copy.ps1",
+					"arguments": "-sourceSnapshotName  $(sourceSnapshotName) -sourceVhdUrl \"$(sourceVhdUrl)\" -destSubscriptionId $(destSubscriptionId) -destAzureAccountName $(destAzureAccountName) -destAzurePasswordString $(destAzurePasswordString) -destAzEnvName  $(destAzEnvName) -destAzEnvLocation $(destAzEnvLocation) -resourceGroupName $(sourceResourceGroupName) -destResourceGroupName $(destResourceGroupName) -storageAccountContainer $(storageAccountContainer) -vmName \"$(vmName)\"",
+					"workingFolder": "",
+					"inlineScript": "# You can write your powershell scripts inline here. \n# You can also pass predefined and custom variables to this scripts using arguments\n\n Write-Host \"Hello World\"",
+					"failOnStandardError": "true"
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "Replace Args in labs-image-sync-parameters-template",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "a8515ec8-7254-4ffd-912c-86772e2b5962",
+					"versionSpec": "2.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"rootDirectory": "",
+					"targetFiles": "**/labs-image-sync-parameters-template.json",
+					"encoding": "auto",
+					"writeBOM": "true",
+					"actionOnMissing": "warn",
+					"keepToken": "false",
+					"tokenPrefix": "#{",
+					"tokenSuffix": "}#",
+					"emptyValue": "(empty)",
+					"escapeChar": "",
+					"charsToEscape": ""
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "Replace Args in labs-result-template",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "a8515ec8-7254-4ffd-912c-86772e2b5962",
+					"versionSpec": "2.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"rootDirectory": "",
+					"targetFiles": "**/labs-result-template.json",
+					"encoding": "auto",
+					"writeBOM": "true",
+					"actionOnMissing": "warn",
+					"keepToken": "false",
+					"tokenPrefix": "#{",
+					"tokenSuffix": "}#",
+					"emptyValue": "(empty)",
+					"escapeChar": "",
+					"charsToEscape": ""
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "将文件复制到: $(build.artifactstagingdirectory)",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "5bfb729a-a7c8-4a78-a7c3-8d717bb7c13c",
+					"versionSpec": "2.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"SourceFolder": "",
+					"Contents": "**/labs-image-sync-parameters-template.json\n**/labs-result-template.json",
+					"TargetFolder": "$(build.artifactstagingdirectory)",
+					"CleanTargetFolder": "false",
+					"OverWrite": "false",
+					"flattenFolders": "false"
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "运行 rename",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+					"versionSpec": "1.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"filename": "rename",
+					"arguments": "$(build.artifactstagingdirectory)\\000-image-sync\\labs-result-template.json result.json",
+					"workingFolder": "",
+					"failOnStandardError": "false"
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "发布项目: drop",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "2ff763a7-ce83-4e1f-bc89-0ae63477cebe",
+					"versionSpec": "1.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"PathtoPublish": "$(build.artifactstagingdirectory)/000-image-sync",
+					"ArtifactName": "drop",
+					"ArtifactType": "Container",
+					"TargetPath": "\\\\my\\share\\$(Build.DefinitionName)\\$(Build.BuildNumber)",
+					"Parallel": "false",
+					"ParallelCount": "8"
+				}
+			}],
+			"name": "阶段1",
+			"refName": "Phase_1",
+			"condition": "succeeded()",
+			"target": {
+				"executionOptions": {
+					"type": 0
+				},
+				"allowScriptsAuthAccessOption": false,
+				"type": 1
+			},
+			"jobAuthorizationScope": "projectCollection",
+			"jobCancelTimeoutInMinutes": 1
+		}],
+		"type": 1
+	},
+	"repository": {
+		"properties": {
+			"cleanOptions": "0",
+			"labelSources": "0",
+			"labelSourcesFormat": "$(build.buildNumber)",
+			"reportBuildStatus": "true",
+			"gitLfsSupport": "false",
+			"skipSyncSource": "false",
+			"checkoutNestedSubmodules": "false",
+			"fetchDepth": "0"
+		},
+		"id": "6f8b93ef-b9cb-484d-a70d-bf04a4fbf350",
+		"type": "TfsGit",
+		"name": "labs-templates",
+		"url": "https://tfs.devopshub.cn/leansoft/Labs/_git/labs-templates",
+		"defaultBranch": "refs/heads/master",
+		"clean": "false",
+		"checkoutSubmodules": false
+	},
+	"processParameters": {},
+	"quality": 1,
+	"authoredBy": {
+		"displayName": "周文洋(Jacky Zhou)",
+		"url": "https://tfs.devopshub.cn/leansoft/_apis/Identities/645e9864-ef7b-4d98-b2ee-21718b5735f2",
+		"_links": {
+			"avatar": {
+				"href": "https://tfs.devopshub.cn/leansoft/_api/_common/identityImage?id=645e9864-ef7b-4d98-b2ee-21718b5735f2"
+			}
+		},
+		"id": "645e9864-ef7b-4d98-b2ee-21718b5735f2",
+		"uniqueName": "LEANSOFT\\jackyzhou",
+		"imageUrl": "https://tfs.devopshub.cn/leansoft/_api/_common/identityImage?id=645e9864-ef7b-4d98-b2ee-21718b5735f2"
+	},
+	"drafts": [],
+	"queue": {
+		"_links": {
+			"self": {
+				"href": "https://tfs.devopshub.cn/leansoft/_apis/build/Queues/155"
+			}
+		},
+		"id": 155,
+		"name": "LSEN-MPN150-7-win-agt",
+		"url": "https://tfs.devopshub.cn/leansoft/_apis/build/Queues/155",
+		"pool": {
+			"id": 18,
+			"name": "LSEN-MPN150-7-win-agt"
+		}
+	},
+	"id": 94,
+	"name": "labs-templates-image-sync",
+	"url": "https://tfs.devopshub.cn/leansoft/580b5af0-a2f5-4585-8ed6-dddf6a84502d/_apis/build/Definitions/94?revision=36",
+	"uri": "vstfs:///Build/Definition/94",
+	"path": "\\labs-test",
+	"type": 2,
+	"queueStatus": 0,
+	"revision": 36,
+	"createdDate": "2018-06-11T04:21:21.163Z",
+	"project": {
+		"id": "580b5af0-a2f5-4585-8ed6-dddf6a84502d",
+		"name": "Labs",
+		"url": "https://tfs.devopshub.cn/leansoft/_apis/projects/580b5af0-a2f5-4585-8ed6-dddf6a84502d",
+		"state": "wellFormed",
+		"revision": 357,
+		"visibility": 0
+	}
+}

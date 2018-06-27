@@ -1,0 +1,54 @@
+{
+	"Services": [{
+			"uniqueName": "docker-swarm",
+			"displayname": "docker-swarm",
+			"master": true,
+			"external": true,
+			"hostname": "#hostname",
+			"username": "#adminUsername",
+			"password": "#adminPassword",
+			"protocol":"ssh",
+			"port": 2200,
+			"properties": [{
+					"key": "displayname",
+					"value": "docker-swarm",
+					"type": "text"
+				},
+				{
+					"key": "protocol",
+					"value": "ssh",
+					"type": "text"
+				},
+				{
+					"key": "username",
+					"value": "#adminUsername",
+					"type": "text"
+				},
+				{
+					"key": "master host name",
+					"value": "#hostname",
+					"type": "text"
+				},
+				{
+					"key": "sshMaster0",
+					"value": "#sshMaster0",
+					"type": "text"
+				},				
+				{
+					"key": "ssh prive key",
+					"value": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBdDV4N2RycGd6YXBac2hxVGxOaG1uOFAwb0NLZlBFOTVUYU1odTRORG5hRHhoNHJRCmRKREIrNHpXMzBKWmZMeW1rZHJ4a3dSUEJGRS9HVGtoNWdMem04Z3FlSG1aalZMa0p0YUJSMTBHeFBkTDREazkKV05Ldkh0dnlvQjB0cTgvR0xGTFA2Y1FRTnFoTjFRRm4xV2xMZENBWlYrNnZMNDJwQkJUMXhZRFdzb3lwZlBCTwpOUW1zWHkycERVMmduMTcvZFBTRHAyLytpZXQxS0hFK253WG9jd0orZmhsRWJDMXZOUjBPcEtpdDlpR2FRa1ZjCkpraDBWZHNXTUgrUzVoYjN0cWNycGtVd3FLeWFvRGRON2Y5RGFoNVczNnpjZ2x3d2ZTTVg1WFRWQ0JoWXVWWGEKblNxaGFZMk10WHZDNkpsOWM2ZU5uK3dLWm5aUkM3YXZaRkovdFFJREFRQUJBb0lCQUZXdFVqdExxdUl0VEY5OApZVU5DVzFqUHduVjYwbHo5SkxoaWw5bjgzVzlQYTRUNDlGNkFNZFJrbXR0aEJZcmNLTW5FcFpjWm1wbUVJL0pzCkkzSkdERkN6N1lWOEVIZk9weUdzVkhUdFpyeEFQUXFyQ3dKSWhXamI3M0poU3k5eDY2SkJIajJSdkpNVXBBVHgKKy9hc2hJWHllSUQ4b29pSkRNWVgxYnRNYkdLeDBBV3lrUks5cVVIeHFoKzhlNzJxY2NYRmlNVDFVQ01XRTk4TQpOSUZqRFp2SC9qSmhnUjFBTjRPbXhuSGhPcGphQjhGSUdPYWtvdGNQYkRLaTlUNi9hWFBwWHB0Nks4QnJzek9oCnJUWjV2b3pyUFZ6OFYxQ3RQd2tSNjdENUZZVDNJVGVlTy9KcXU3S00yRnhUeDVaQ2cwK29rOUFJNGo4T1N0Y2IKNURESVRtRUNnWUVBMitmLzdlVEU0b1Z0dTFmc2t5c2k4YlZ1ZkZ2RVVjTVprVWttczRQR2s3WFg4Sy8rVFFDcQpFYkk3M0p2YzhaMUhLUXpWYi9UTlJhUHltTVlzRFNBSzFqQWY3QnFZeDRZSEpRZDBHRHVNMXVhMkx0K1VJamZ1CjJhRC9JWXlSU1MyWGlhcjJveVp5cWJMM1I5R3ZJOVRPdWVnby81dlNmVXRpZFFCZmhudlFwNmtDZ1lFQTFiOXgKYTV5ek9MU1pWQTAwYS9CTFhHa2RBL2ZWRFpIUjZEL1R6UzhPcjVuMzk0V2hRTmlOdzZocDYrL05XTzRPZHRjSApKYU9DWXM3cnF6YTNhS2s0UlVzQWl2QWhQdW9VQ2JCbFBvVGYzRW5kYXZXMTNIWTh3VlNwUWxOQnhMNXQxbzhSCk1UYWZlUFpjMmduTGlLclE5Q25ZV1VuOE4xT1VLRmd5NUtrVkx5MENnWUVBMUdadEtCWENwUmhET0tSZitIVzkKdHNDTENzcUlBSUQwL1FNdXdrMFJUREpqZERKSTZZOHV0UkQyQ01yeXlOd2trMTIxK2dEMUU4S2Eyenp0NTI5LwppQW5MaTN6VS9FSlVQRXZLc20weVI0OW5nRGFyR2JIMG5YZUhkWndUNkI2Rk00OVIwWnVkUEpPRGpIYlhOMENnCnU2ZWxrZDJyblNGbTQ2T01vSlNPb0tFQ2dZQjNsRHFuc1dxeWRwYXc1eEpFc0pINGlQV3FtcU9laTgyYTJOcHQKRjc1bmp3T2lmaWZRVjFZMzk2Z0tUb1hiRXBNVStRY09qNE1LTkNpMENGQmpSUWd0KzkrNTJzMCtuVVhJaGQ2ZQpNMGZwdllrWnBZeXdZWlZyc3lsZDZhWUpvMTlmZ1hwa3hlSkJrZEl3U1BxTTRzTXpWWldybmpCejQxWW5tL0FjCjdGcmxvUUtCZ0ZxZENDN0FJQzJRb3Y2WGV2RkxDVGFpVDVYS2JIVEVXTEFsRnBsaTkvditQaEhBYVA0elJZREgKaEp1WnVJVEZpdFVlVGc4cmdPR1B3VmVEYmZESnRMOWhzTFFKNkZSamV0Tm5ac1gvOEtTbW5pV0pLNkxOOHdsWgpKK2NJUXdSckpSWWVpaFB5MnFqUml5Vk5haEFVWDVrdkN2WWpRZUpNcWRoVUxwMUpZRUJZCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0t",
+					"type": "base64"
+				}
+			]
+		}
+	],
+	"Info": {
+		"Subscription": {
+			"Id": "#subscriptionId"
+		},
+		"ResourceGroup": {
+			"Name": "#resourceGroupName",
+			"Location": "#resourceGroupLocation"
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+     "enviroments": [
+
+        {
+            "displayname": "jenkins",
+            "protocol": "ssh",
+            "hostname": "#hostname",
+            "username": "#adminUsername",
+            "password": "#adminPassword",
+            "privatekey":"#privateKey",
+            "port": 22,
+            "external": true,
+            "master": true,
+            "apps": [
+                {
+                    "name": "jenkins",
+                    "port": 80
+                }
+            ]
+        }
+     ],
+     "Info": {
+		"Subscription":{
+			"Id":"#subscriptionId"
+		},
+		"ResourceGroup": {
+			"Name": "#resourceGroupName",
+			"Location": "#resourceGroupLocation"
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "itemDisplayName": "Team Foudation Server",
+  "icon": "ubuntu",
+  "description": "用于自动部署，扩展和管理容器化应用程序的开源系统。",
+  "summary": "用于自动部署，扩展和管理容器化应用程序的开源系统。",
+  "githubUsername": "azure-devops",
+  "dateUpdated": "2018-06-21"
+}

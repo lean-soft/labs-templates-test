@@ -1,0 +1,59 @@
+{
+	"Services": [{
+			"uniqueName": "cadvisor",
+			"displayname": "cadvisor",
+			"master": true,
+			"external": true,
+			"hostname": "#hostname",
+			"username": "#adminUsername",
+			"password": "#adminPassword",
+			"protocol":"ssh",
+			"port": 22,
+			"properties": [{
+					"key": "displayname",
+					"value": "cadvisor",
+					"type": "text"
+				},
+				{
+					"key": "protocol",
+					"value": "ssh",
+					"type": "text"
+				},
+				{
+					"key": "hostname",
+					"value": "#hostname",
+					"type": "text"
+				},
+				{
+					"key": "username",
+					"value": "#adminUsername",
+					"type": "text"
+				},
+				{
+					"key": "password",
+					"value": "#adminPassword",
+					"type": "text"
+				},
+				{
+					"key": "port",
+					"value": "22",
+					"type": "text"
+				}
+			],
+			"apps": [{
+				"name": "cadvisor",
+				"port": 8080,
+				"virtualPath": ""
+			}]
+		}
+	],
+	"Info": {
+		"Subscription": {
+			"Id": "#subscriptionId"
+		},
+		"ResourceGroup": {
+			"Name": "#resourceGroupName",
+			"Location": "#resourceGroupLocation"
+		}
+	}
+}

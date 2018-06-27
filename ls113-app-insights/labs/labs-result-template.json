@@ -1,0 +1,45 @@
+{
+	"Services": [
+		{
+			"uniqueName":"AppInsights",
+			"displayname": "Application Insights",
+			"properties":[
+				{
+					"key":"Application Name",
+					"value":"#appName",
+					"type":"text"
+				},
+				{
+					"key":"Instrumentation Key",
+					"value":"#instrumentationKey",
+					"type":"text"
+				},
+				{
+					"key":"Portal URL",
+					"value":"#portalURL",
+					"type":"url"
+				},
+				{
+					"key":"Portal Username",
+					"value":"#portalUsername",
+					"type":"text"
+				},
+				{
+					"key":"Portal Password",
+					"value":"#portalPassword",
+					"type":"text"
+					
+				}
+			]
+		}
+	],
+	"Info": {
+		"Subscription": {
+			"Id": "#subscriptionId"
+		},
+		"ResourceGroup": {
+			"Name": "#resourceGroupName",
+			"Location": "#resourceGroupLocation"
+		}
+	}
+}
