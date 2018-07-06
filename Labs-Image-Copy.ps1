@@ -12,8 +12,7 @@ Param(
 
     [string] [Parameter(Mandatory=$false)] $uniqueSeed, # maybe a buildid
     [string] [Parameter(Mandatory=$true)] $vmName, 
-    [string] [Parameter(Mandatory=$true)] $resourceGroupName, 
-    [string] [Parameter(Mandatory=$false)] $destResourceGroupName, 
+    [string] [Parameter(Mandatory=$true)] $destResourceGroupName, 
     [string] [Parameter(Mandatory=$false)] $storageAccountContainer = "vhds" # 3 and 24 characters in length and use numbers and lower-case letters  
 
  )
