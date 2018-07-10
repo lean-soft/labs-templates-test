@@ -1,1 +1,276 @@
-{"options":[{"enabled":false,"definition":{"id":"5d58cc01-7c75-450c-be18-a388ddb129ec"},"inputs":{"branchFilters":"[\"+refs/heads/*\"]","additionalFields":"{}"}},{"enabled":false,"definition":{"id":"a9db38f9-9fdc-478c-b0f9-464221e58316"},"inputs":{"workItemType":"16","assignToRequestor":"true","additionalFields":"{}"}}],"variables":{"system.debug":{"value":"false","allowOverride":true},"tfs_password":{"value":null,"isSecret":true},"tfs_username":{"value":"labs-service"}},"retentionRules":[{"branches":["+refs/heads/*"],"artifacts":[],"artifactTypesToDelete":["FilePath","SymbolStore"],"daysToKeep":10,"minimumToKeep":1,"deleteBuildRecord":true,"deleteTestResults":true}],"properties":{},"tags":[],"metrics":[{"name":"CurrentBuildsInQueue","scope":"refs/heads/master","intValue":0},{"name":"CurrentBuildsInProgress","scope":"refs/heads/master","intValue":0},{"name":"CurrentBuildsInQueue","scope":"$/labs-prod","intValue":0},{"name":"CurrentBuildsInProgress","scope":"$/labs-prod","intValue":0},{"name":"CurrentBuildsInQueue","scope":"refs/heads/master","intValue":0},{"name":"CurrentBuildsInProgress","scope":"refs/heads/master","intValue":0},{"name":"CurrentBuildsInQueue","scope":"refs/heads/master","intValue":0},{"name":"CurrentBuildsInProgress","scope":"refs/heads/master","intValue":0},{"name":"CurrentBuildsInQueue","scope":"refs/heads/master","intValue":0},{"name":"CurrentBuildsInProgress","scope":"refs/heads/master","intValue":0},{"name":"CanceledBuilds","scope":"refs/heads/master","intValue":0,"date":"2018-07-09T00:00:00.000Z"},{"name":"FailedBuilds","scope":"refs/heads/master","intValue":1,"date":"2018-07-09T00:00:00.000Z"},{"name":"PartiallySuccessfulBuilds","scope":"refs/heads/master","intValue":0,"date":"2018-07-09T00:00:00.000Z"},{"name":"SuccessfulBuilds","scope":"refs/heads/master","intValue":2,"date":"2018-07-09T00:00:00.000Z"},{"name":"TotalBuilds","scope":"refs/heads/master","intValue":3,"date":"2018-07-09T00:00:00.000Z"},{"name":"CanceledBuilds","scope":"refs/heads/master","intValue":0,"date":"2018-07-09T00:00:00.000Z"},{"name":"FailedBuilds","scope":"refs/heads/master","intValue":0,"date":"2018-07-09T00:00:00.000Z"},{"name":"PartiallySuccessfulBuilds","scope":"refs/heads/master","intValue":0,"date":"2018-07-09T00:00:00.000Z"},{"name":"SuccessfulBuilds","scope":"refs/heads/master","intValue":1,"date":"2018-07-09T00:00:00.000Z"},{"name":"TotalBuilds","scope":"refs/heads/master","intValue":1,"date":"2018-07-09T00:00:00.000Z"}],"_links":{"self":{"href":"https://tfs.devopshub.cn/CloudEdge/ee4c678f-88aa-4921-bca5-52957580be6c/_apis/build/Definitions/4?revision=88"},"web":{"href":"https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=ee4c678f-88aa-4921-bca5-52957580be6c&definitionId=4"},"editor":{"href":"https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=ee4c678f-88aa-4921-bca5-52957580be6c&definitionId=4"}},"jobAuthorizationScope":1,"jobTimeoutInMinutes":60,"jobCancelTimeoutInMinutes":5,"process":{"phases":[{"steps":[{"environment":{},"enabled":true,"continueOnError":false,"alwaysRun":false,"displayName":"运行 git","timeoutInMinutes":0,"condition":"succeeded()","task":{"id":"d9bafed4-0b18-4f58-968d-86655b4d2ce9","versionSpec":"1.*","definitionType":"task"},"inputs":{"filename":"git","arguments":"pull https://$(tfs_username):$(tfs_password)@tfs.devopshub.cn/CloudEdge/labs-prod/_git/labs-templates","workingFolder":"","failOnStandardError":"false"}},{"environment":{},"enabled":true,"continueOnError":false,"alwaysRun":false,"displayName":"运行 git","timeoutInMinutes":0,"condition":"succeeded()","task":{"id":"d9bafed4-0b18-4f58-968d-86655b4d2ce9","versionSpec":"1.*","definitionType":"task"},"inputs":{"filename":"git","arguments":"push https://$(tfs_username):$(tfs_password)@tfs.devopshub.cn/CloudEdge/labs-prod/_git/labs-templates head:master","workingFolder":"labs-templates.git","failOnStandardError":"false"}}],"name":"阶段 1","refName":"Phase_1","condition":"succeeded()","target":{"executionOptions":{"type":0},"allowScriptsAuthAccessOption":false,"type":1},"jobAuthorizationScope":"projectCollection","jobCancelTimeoutInMinutes":1}],"type":1},"repository":{"properties":{"fullName":"repository","cloneUrl":"https://github.com/lean-soft/labs-templates.git","isPrivate":"False","checkoutNestedSubmodules":"false","cleanOptions":"3","fetchDepth":"0","gitLfsSupport":"false","reportBuildStatus":"true","connectedServiceId":"28b327f7-fe97-4ef1-a583-807f5cac4127","skipSyncSource":"false","labelSourcesFormat":"$(build.buildNumber)","labelSources":"0"},"id":"https://github.com/lean-soft/labs-templates.git","type":"Git","name":"repository","url":"https://github.com/lean-soft/labs-templates.git","defaultBranch":"master","clean":"true","checkoutSubmodules":false},"processParameters":{},"quality":1,"authoredBy":{"displayName":"徐磊","url":"https://tfs.devopshub.cn/CloudEdge/_apis/Identities/f84bdc63-f2ba-4c65-a877-0420cb73fe8f","_links":{"avatar":{"href":"https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=f84bdc63-f2ba-4c65-a877-0420cb73fe8f"}},"id":"f84bdc63-f2ba-4c65-a877-0420cb73fe8f","uniqueName":"LEANSOFT\\leixu","imageUrl":"https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=f84bdc63-f2ba-4c65-a877-0420cb73fe8f"},"drafts":[],"queue":{"_links":{"self":{"href":"https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/5"}},"id":5,"name":"LSEN-MPN150-7-win-agt","url":"https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/5","pool":{"id":18,"name":"LSEN-MPN150-7-win-agt"}},"id":4,"name":"labs-templates-repo-sync","url":"https://tfs.devopshub.cn/CloudEdge/ee4c678f-88aa-4921-bca5-52957580be6c/_apis/build/Definitions/4?revision=88","uri":"vstfs:///Build/Definition/4","path":"\\labs-prod","type":2,"queueStatus":0,"revision":88,"createdDate":"2018-07-09T10:29:34.200Z","project":{"id":"ee4c678f-88aa-4921-bca5-52957580be6c","name":"labs-prod","url":"https://tfs.devopshub.cn/CloudEdge/_apis/projects/ee4c678f-88aa-4921-bca5-52957580be6c","state":"wellFormed","revision":21,"visibility":0}}
+{
+	"options": [{
+		"enabled": false,
+		"definition": {
+			"id": "5d58cc01-7c75-450c-be18-a388ddb129ec"
+		},
+		"inputs": {
+			"branchFilters": "[\"+refs/heads/*\"]",
+			"additionalFields": "{}"
+		}
+	}, {
+		"enabled": false,
+		"definition": {
+			"id": "a9db38f9-9fdc-478c-b0f9-464221e58316"
+		},
+		"inputs": {
+			"workItemType": "16",
+			"assignToRequestor": "true",
+			"additionalFields": "{}"
+		}
+	}],
+	"variables": {
+		"system.debug": {
+			"value": "false",
+			"allowOverride": true
+		},
+		"tfs_password": {
+			"value": null,
+			"isSecret": true
+		},
+		"tfs_username": {
+			"value": "labs-service"
+		}
+	},
+	"retentionRules": [{
+		"branches": ["+refs/heads/*"],
+		"artifacts": [],
+		"artifactTypesToDelete": ["FilePath", "SymbolStore"],
+		"daysToKeep": 10,
+		"minimumToKeep": 1,
+		"deleteBuildRecord": true,
+		"deleteTestResults": true
+	}],
+	"properties": {},
+	"tags": [],
+	"metrics": [{
+		"name": "CurrentBuildsInQueue",
+		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInProgress",
+		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInQueue",
+		"scope": "$/labs-prod",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInProgress",
+		"scope": "$/labs-prod",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInQueue",
+		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInProgress",
+		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInQueue",
+		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInProgress",
+		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInQueue",
+		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CurrentBuildsInProgress",
+		"scope": "refs/heads/master",
+		"intValue": 0
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-09T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 1,
+		"date": "2018-07-09T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-09T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 2,
+		"date": "2018-07-09T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 3,
+		"date": "2018-07-09T00:00:00.000Z"
+	}, {
+		"name": "CanceledBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-09T00:00:00.000Z"
+	}, {
+		"name": "FailedBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-09T00:00:00.000Z"
+	}, {
+		"name": "PartiallySuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 0,
+		"date": "2018-07-09T00:00:00.000Z"
+	}, {
+		"name": "SuccessfulBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 1,
+		"date": "2018-07-09T00:00:00.000Z"
+	}, {
+		"name": "TotalBuilds",
+		"scope": "refs/heads/master",
+		"intValue": 1,
+		"date": "2018-07-09T00:00:00.000Z"
+	}],
+	"_links": {
+		"self": {
+			"href": "https://tfs.devopshub.cn/CloudEdge/ee4c678f-88aa-4921-bca5-52957580be6c/_apis/build/Definitions/4?revision=88"
+		},
+		"web": {
+			"href": "https://tfs.devopshub.cn/_permalink/_build/index?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=ee4c678f-88aa-4921-bca5-52957580be6c&definitionId=4"
+		},
+		"editor": {
+			"href": "https://tfs.devopshub.cn/_permalink/_build/definitionEditor?collectionId=62f228ab-578a-49fc-8827-0e5398dbc24b&projectId=ee4c678f-88aa-4921-bca5-52957580be6c&definitionId=4"
+		}
+	},
+	"jobAuthorizationScope": 1,
+	"jobTimeoutInMinutes": 60,
+	"jobCancelTimeoutInMinutes": 5,
+	"process": {
+		"phases": [{
+			"steps": [{
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "运行 git",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+					"versionSpec": "1.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"filename": "git",
+					"arguments": "pull https://$(tfs_username):$(tfs_password)@tfs.devopshub.cn/CloudEdge/labs-prod/_git/labs-templates",
+					"workingFolder": "",
+					"failOnStandardError": "false"
+				}
+			}, {
+				"environment": {},
+				"enabled": true,
+				"continueOnError": false,
+				"alwaysRun": false,
+				"displayName": "运行 git",
+				"timeoutInMinutes": 0,
+				"condition": "succeeded()",
+				"task": {
+					"id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+					"versionSpec": "1.*",
+					"definitionType": "task"
+				},
+				"inputs": {
+					"filename": "git",
+					"arguments": "push https://$(tfs_username):$(tfs_password)@tfs.devopshub.cn/CloudEdge/labs-prod/_git/labs-templates head:master",
+					"workingFolder": "labs-templates.git",
+					"failOnStandardError": "false"
+				}
+			}],
+			"name": "阶段 1",
+			"refName": "Phase_1",
+			"condition": "succeeded()",
+			"target": {
+				"executionOptions": {
+					"type": 0
+				},
+				"allowScriptsAuthAccessOption": false,
+				"type": 1
+			},
+			"jobAuthorizationScope": "projectCollection",
+			"jobCancelTimeoutInMinutes": 1
+		}],
+		"type": 1
+	},
+	"repository": {
+		"properties": {
+			"fullName": "repository",
+			"cloneUrl": "https://github.com/lean-soft/labs-templates.git",
+			"isPrivate": "False",
+			"checkoutNestedSubmodules": "false",
+			"cleanOptions": "3",
+			"fetchDepth": "0",
+			"gitLfsSupport": "false",
+			"reportBuildStatus": "true",
+			"connectedServiceId": "28b327f7-fe97-4ef1-a583-807f5cac4127",
+			"skipSyncSource": "false",
+			"labelSourcesFormat": "$(build.buildNumber)",
+			"labelSources": "0"
+		},
+		"id": "https://github.com/lean-soft/labs-templates.git",
+		"type": "Git",
+		"name": "repository",
+		"url": "https://github.com/lean-soft/labs-templates.git",
+		"defaultBranch": "master",
+		"clean": "true",
+		"checkoutSubmodules": false
+	},
+	"processParameters": {},
+	"quality": 1,
+	"authoredBy": {
+		"displayName": "徐磊",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/Identities/f84bdc63-f2ba-4c65-a877-0420cb73fe8f",
+		"_links": {
+			"avatar": {
+				"href": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=f84bdc63-f2ba-4c65-a877-0420cb73fe8f"
+			}
+		},
+		"id": "f84bdc63-f2ba-4c65-a877-0420cb73fe8f",
+		"uniqueName": "LEANSOFT\\leixu",
+		"imageUrl": "https://tfs.devopshub.cn/CloudEdge/_api/_common/identityImage?id=f84bdc63-f2ba-4c65-a877-0420cb73fe8f"
+	},
+	"drafts": [],
+	"queue": {
+		"_links": {
+			"self": {
+				"href": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/5"
+			}
+		},
+		"id": 5,
+		"name": "LSEN-MPN150-7-win-agt",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/build/Queues/5",
+		"pool": {
+			"id": 18,
+			"name": "LSEN-MPN150-7-win-agt"
+		}
+	},
+	"id": 4,
+	"name": "labs-templates-repo-sync",
+	"url": "https://tfs.devopshub.cn/CloudEdge/ee4c678f-88aa-4921-bca5-52957580be6c/_apis/build/Definitions/4?revision=88",
+	"uri": "vstfs:///Build/Definition/4",
+	"path": "\\labs-prod",
+	"type": 2,
+	"queueStatus": 0,
+	"revision": 88,
+	"createdDate": "2018-07-09T10:29:34.200Z",
+	"project": {
+		"id": "ee4c678f-88aa-4921-bca5-52957580be6c",
+		"name": "labs-prod",
+		"url": "https://tfs.devopshub.cn/CloudEdge/_apis/projects/ee4c678f-88aa-4921-bca5-52957580be6c",
+		"state": "wellFormed",
+		"revision": 21,
+		"visibility": 0
+	}
+}
