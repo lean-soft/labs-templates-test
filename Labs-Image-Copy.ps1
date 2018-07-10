@@ -15,7 +15,7 @@ Param(
     [string] [Parameter(Mandatory=$true)] $destResourceGroupName, 
     [string] [Parameter(Mandatory=$true)] $storageAccountContainer = "vhds", # 3 and 24 characters in length and use numbers and lower-case letters  
 
-    [string] [Parameter(Mandatory=$true)] $resultTemplateFilePath # if leave empty, will use $env:BUILD_SOURCESDIRECTORY + '\000-image-sync\labs-result-template.json'
+    [string] [Parameter(Mandatory=$false)] $resultTemplateFilePath # if leave empty, will use $env:BUILD_SOURCESDIRECTORY + '\000-image-sync\labs-result-template.json'
 
  )
 
